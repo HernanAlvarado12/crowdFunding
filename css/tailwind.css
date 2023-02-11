@@ -549,6 +549,14 @@ body::-webkit-scrollbar-thumb {
   position: relative;
 }
 
+.left-0 {
+  left: 0px;
+}
+
+.right-0 {
+  right: 0px;
+}
+
 .top-2 {
   top: 2rem;
 }
@@ -559,14 +567,6 @@ body::-webkit-scrollbar-thumb {
 
 .top-8 {
   top: 8rem;
-}
-
-.left-0 {
-  left: 0px;
-}
-
-.right-0 {
-  right: 0px;
 }
 
 .z-20 {
@@ -597,8 +597,17 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 5rem;
 }
 
+.my-4 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
 .mt-3 {
   margin-top: 3rem;
+}
+
+.block {
+  display: block;
 }
 
 .flex {
@@ -617,6 +626,10 @@ body::-webkit-scrollbar-thumb {
   height: 1rem;
 }
 
+.h-2 {
+  height: 2rem;
+}
+
 .h-4 {
   height: 4rem;
 }
@@ -632,6 +645,10 @@ body::-webkit-scrollbar-thumb {
 .h-max {
   height: -moz-max-content;
   height: max-content;
+}
+
+.w-2 {
+  width: 2rem;
 }
 
 .w-3\/4 {
@@ -732,15 +749,6 @@ body::-webkit-scrollbar-thumb {
 
 .rounded-md {
   border-radius: 0.8rem;
-}
-
-.rounded-sm {
-  border-radius: 0.6rem;
-}
-
-.bg-blue-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
 }
 
 .bg-cyan {
@@ -877,6 +885,10 @@ body::-webkit-scrollbar-thumb {
   --tw-translate-y: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   text-align: center;
+}
+
+.circle {
+  border-radius: 9999px;
 }
 
 .backdrop\:bg-backdrop::backdrop {

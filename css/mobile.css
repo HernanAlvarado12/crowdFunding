@@ -51,4 +51,8 @@
     .bg-backdrop {
         @apply bg-slate-700 opacity-30 select-none shadow-sm;
     }
+
+    .circle {
+        @apply rounded-full
+    }
 }
