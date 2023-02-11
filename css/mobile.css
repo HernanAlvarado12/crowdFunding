@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        font-size: 62.5%;
+        font-family: 'Commissioner', sans-serif;
+        user-select: none;
+    }
+
+    body::-webkit-scrollbar {
+        width: 0.7rem;
+    }
+
+    body::-webkit-scrollbar-track-piece {
+        margin: 0.2rem 0;
+    }
+
+    body::-webkit-scrollbar-thumb {
+        height: 8rem;
+        border-radius: 1rem;
+        background-color: hsl(176, 50%, 47%);
+    }
+}
+
+@layer utilities {
+    .flex-flow {
+        @apply flex items-center flex-col text-center;
+    }
+
+    .flex-start {
+        @apply text-start;
+    }
+
+    .border-1 {
+        border: 1px solid hsl(0, 0%, 82%);
+    }
+
+    .dialog {
+        @apply text-center fixed top-50 translate-y-50;
+    }
+
+    .bg-backdrop {
+        @apply bg-slate-700 opacity-30 select-none shadow-sm;
+    }
+}
