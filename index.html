@@ -23,15 +23,15 @@
 
     <body>
         
-        <header class ="w-full aspect-video relative bg-header bg-cover bg-no-repeat">
-            <nav class ="w-90 h-8 mx-auto flex items-center justify-between">
+        <header class ="w-full aspect-video relative bg-header bg-cover bg-no-repeat sm:aspect-[3/1] sm:bg-header-sm sm:bg-contain">
+            <nav class ="w-90 h-8 mx-auto flex items-center justify-between sm:relative">
                 <img src ="./assets/logo.svg" alt ="icon logo">
-                <img class ="cursor-pointer" id ="iconMenu" src ="./assets/hamburger.svg" alt ="icon menu">
-                <menu class ="w-90 h-max mx-auto p-3 absolute top-8 z-20 rounded-md shadow-sm bg-white hidden">
-                    <ul class ="flex flex-col gap-y-3">
-                        <li><a class ="text-black text-md font-medium" href ="#">About</a></li>
-                        <li><a class ="text-black text-md font-medium" href ="#">Discover</a></li>
-                        <li><a class ="text-black text-md font-medium" href ="#">Get Started</a></li>
+                <img class ="cursor-pointer sm:hidden" id ="iconMenu" src ="./assets/hamburger.svg" alt ="icon menu">
+                <menu class ="w-90 h-max mx-auto p-3 absolute top-8 z-20 rounded-md shadow-sm bg-white hidden sm:nav-sm">
+                    <ul class ="flex flex-col gap-y-3 sm:flex-row sm:gap-x-2">
+                        <li><a class ="text-black text-md font-medium sm:text-white" href ="#">About</a></li>
+                        <li><a class ="text-black text-md font-medium sm:text-white" href ="#">Discover</a></li>
+                        <li><a class ="text-black text-md font-medium sm:text-white" href ="#">Get Started</a></li>
                     </ul>
                 </menu>
             </nav>
@@ -65,26 +65,29 @@
             </dialog>
         </header>
 
-        <main class ="w-90 mx-auto translate-y-5">
-            <article class ="py-3 px-2 flex-flow gap-y-1.5 relative rounded-md bg-white">
+        <main class ="w-90 max-w-6xl mx-auto translate-y-5 shadow-xs sm:translate-y-12">
+            <article class ="py-3 px-2 flex-flow gap-y-1.5 relative rounded-md bg-white sm:pt-5 sm:px-4">
                 <img class ="w-5 h-5 absolute top-2.5" src ="./assets/mastercraft.svg" alt ="picture">
-                <h2 class ="text-lg font-semibold">Mastercraft Bamboo Monitor Riser</h2>
-                <p class ="text-gray text-sm">A beautiful handcrafted monitor stand to reduce necnk and eye strain.</p>
-                <div class ="flex items-center justify-center gap-x-1">
-                    <button class ="w-[16rem] b-full text-xs font-semibold tracking-wide">Back this project</button>
-                    <img class ="w-5 h-5" src ="./assets/bookmark.svg" alt ="icon mark">    
+                <h2 class ="text-lg font-semibold sm:text-base">Mastercraft Bamboo Monitor Riser</h2>
+                <p class ="text-gray text-sm sm:text-xsm">A beautiful handcrafted monitor stand to reduce necnk and eye strain.</p>
+                <div class ="flex items-center justify-center gap-x-1 sm:w-full sm:justify-between">
+                    <button class ="w-[16rem] b-full text-xs font-semibold tracking-wide sm:w-[18rem] sm:text-xsm sm:hover:bg-cyan-500">Back this project</button>
+                    <figure class ="cursor-pointer sm:flex sm:items-center sm:gap-x-1 sm:hover:opacity-75">
+                        <img class ="w-5 h-5" src ="./assets/bookmark.svg" alt ="icon mark">    
+                        <figcaption class ="hidden sm:text-gray sm:text-xsm sm:font-semibold sm:block">Bookmark</figcaption>
+                    </figure>
                 </div>
             </article>
-            <section class ="my-5 px-2 flex-flow gap-y-3">
+            <section class ="my-5 px-2 flex-flow gap-y-3 sm:mt-8 sm:mb-10 sm:px-4 sm:flex-row sm:flex-wrap">
                 <template id ="projectTemplate">
-                    <article>
-                        <h3 class ="text-black text-lg font-semibold"></h3>
-                        <p class ="text-gray text-sm"></p>
+                    <article class ="w-1/3">
+                        <h3 class ="text-black text-lg font-semibold sm:text-base"></h3>
+                        <p class ="text-gray text-sm sm:text-xsm"></p>
                     </article>
                 </template>
                 <span class ="w-3/4 h-1 self-start rounded-md bg-cyan"></span>
             </section>
-            <section class ="flex flex-col gap-y-3 text-gray text-sm">
+            <section class ="px-2 flex flex-col gap-y-3 text-gray text-sm sm:px-4 sm:text-xsm">
                 <h2 class ="text-black text-md font-semibold">About this project</h2>
                 <p>
                     The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that 
@@ -99,17 +102,19 @@
                 </p>
                 <section>
                     <template id ="planTemplate">
-                        <article class ="my-2 py-3 px-2 flex flex-col gap-y-2 border-1">
-                            <div>
+                        <article class ="my-2 py-3 px-2 flex flex-col gap-y-2 border-1 sm:py-4 sm:px-3">
+                            <div class ="sm:flex sm:justify-between">
                                 <h4 class ="text-black font-semibold"></h4>
                                 <p class ="text-cyan font-medium"></p>
                             </div>
                             <p></p>
-                            <div class ="flex items-center gap-x-0.5">
-                                <span class ="text-black text-base font-semibold">101</span>
-                                <span>left</span>
+                            <div class ="sm:flex sm:justify-between">
+                                <div class="flex items-center gap-x-0.5">
+                                    <span class="text-black text-base font-semibold">101</span>
+                                    <span>left</span>
+                                </div>
+                                <button class="w-[15rem] mt-2 b-full sm:hover:bg-cyan-500">Select Reward</button>
                             </div>
-                            <button class ="w-[15rem] b-full">Select Reward</button>
                         </article>
                     </template>
                     <dialog class ="w-90 max-w-3xl mx-auto p-3 dialog rounded-md backdrop:bg-backdrop">

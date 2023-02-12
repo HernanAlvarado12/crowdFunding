@@ -66,4 +66,8 @@
     .nav-d {
         @apply max-w-5xl max-h-min mx-auto absolute left-0 right-0 z-10 rounded-lg
     }
+    
+    .nav-sm {
+        @apply w-auto mx-0 p-0 block relative top-0 shadow-none bg-transparent;
+    }
 }

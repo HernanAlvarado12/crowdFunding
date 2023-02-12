@@ -15,11 +15,12 @@ document.addEventListener('click', event => {
         const menu = document.querySelector('menu')
         menu.classList.contains('hidden')? event.target.setAttribute('src', './assets/close-menu.svg') : event.target.setAttribute('src', './assets/hamburger.svg')
         menu.classList.toggle('hidden')
-    }else if(event.target.matches('article:not(.opacity-60) > button.b-full')) {
+    }else if(event.target.matches('article:not(.opacity-60) div button.b-full')) {
         dialog.showModal()
     }else if(event.target.matches('dialog > button')) {
         dialog.close()
     }else if(event.target.matches('main > article div > button.b-full')) {
+        console.log('second modal', event.target)
         modalProject.showModal()
     }else if(event.target.matches('dialog.nav-d > div > img')) {
         modalProject.close()
@@ -27,8 +28,11 @@ document.addEventListener('click', event => {
         const parentElement = parentNode(event.target, 'article.w-full.flex.flex-col')
         const exist = document.querySelector('article.border-2-cyan')  
         if(!parentElement.classList.contains('opacity-60')) {
-            if(exist)
+            if(exist) {
                 exist.classList.remove('border-2-cyan')
+                exist.querySelector('span.circle.border-1').classList.remove('p-0.5', 'bg-cyan')
+            }
+            parentElement.querySelector('span.circle.border-1').classList.add('p-0.5', 'bg-cyan')
             parentElement.classList.add('border-2-cyan')
         }
     }
@@ -56,7 +60,6 @@ projects.forEach(project => {
 })
 const line = document.querySelector('#projectTemplate + span')
 document.querySelector('section.my-5.px-2.flex-flow').insertBefore(projectsFragment, line)
-
 
 /**
  * @typedef {Object} planObject
@@ -97,3 +100,9 @@ function parentNode(currentNode, classList) {
             return parentNode(currentNode.parentElement, classList)
     }
 }
+
+
+matchMedia('(max-width: 899px)').addEventListener('change', () => {
+    document.querySelector('menu').classList.add('hidden')
+    document.getElementById('iconMenu').setAttribute('src', './assets/hamburger.svg')
+})

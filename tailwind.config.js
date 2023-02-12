@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        'sm': '900px'
+        'sm': '900px',
+        'reverse': {'max': '889px'}
       },
       spacing: {
         '0.5': '0.3rem',
@@ -16,12 +17,15 @@ module.exports = {
         '5': '5rem',
         '6': '6rem',
         '8': '8rem',
+        '10': '10rem',
         '50': '50%',
+        '85': '85%',
         '90': '90%'
       },
       fontSize: {
         'xs': '1.2rem',
         'sm': '1.4rem',
+        'xsm': '1.6rem',
         'md': '1.8rem',
         'lg': '2.4rem',
         'base': '3.2rem',
@@ -29,6 +33,7 @@ module.exports = {
       },
       translate: {
         '5': '-5rem',
+        '12': '-12rem',
         '50': '-50%'
       },
       borderRadius: {
@@ -40,6 +45,7 @@ module.exports = {
         'white': 'hsl(0, 0%, 82%)'
       },
       boxShadow: {
+        'xs': '0 0.2rem 1rem rgb(0, 0, 0, 0.2)',
         'sm': '0 0.2rem 2rem rgb(0, 0, 0, 0.5)'
       },
       inset: {
