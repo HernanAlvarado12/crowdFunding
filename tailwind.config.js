@@ -36,6 +36,9 @@ module.exports = {
         'md': '0.8rem',
         'lg': '1rem'
       },
+      borderColor: {
+        'white': 'hsl(0, 0%, 82%)'
+      },
       boxShadow: {
         'sm': '0 0.2rem 2rem rgb(0, 0, 0, 0.5)'
       },
@@ -50,7 +53,7 @@ module.exports = {
         cyan: {
           DEFAULT: 'hsl(176, 50%, 47%)',
           '500': 'hsl(176, 72%, 28%)'
-        }
+        },
       },
       backgroundImage: {
         'header': "url('../assets/hero-mobile.jpg')",

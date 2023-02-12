@@ -40,8 +40,7 @@
     }
 
     .border-1 {
-        border: 1px solid hsl(0, 0%, 82%);
-        @apply rounded-sm;
+        @apply border border-solid border-white rounded-sm;
     }
 
     .dialog {
@@ -54,5 +53,17 @@
 
     .circle {
         @apply rounded-full
+    }
+
+    .b-full {
+        @apply h-4 text-white outline-none rounded-full bg-cyan;
+    }
+
+    .border-2-cyan {
+        @apply border-cyan;
+    }
+
+    .nav-d {
+        @apply max-w-5xl max-h-min mx-auto absolute left-0 right-0 z-10 rounded-lg
     }
 }

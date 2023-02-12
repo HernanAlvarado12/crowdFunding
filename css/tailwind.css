@@ -549,14 +549,6 @@ body::-webkit-scrollbar-thumb {
   position: relative;
 }
 
-.left-0 {
-  left: 0px;
-}
-
-.right-0 {
-  right: 0px;
-}
-
 .top-2 {
   top: 2rem;
 }
@@ -571,10 +563,6 @@ body::-webkit-scrollbar-thumb {
 
 .z-20 {
   z-index: 20;
-}
-
-.z-50 {
-  z-index: 50;
 }
 
 .mx-auto {
@@ -597,13 +585,12 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 5rem;
 }
 
-.my-4 {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-}
-
 .mt-3 {
   margin-top: 3rem;
+}
+
+.mt-8 {
+  margin-top: 8rem;
 }
 
 .block {
@@ -628,10 +615,6 @@ body::-webkit-scrollbar-thumb {
 
 .h-2 {
   height: 2rem;
-}
-
-.h-4 {
-  height: 4rem;
 }
 
 .h-5 {
@@ -739,14 +722,6 @@ body::-webkit-scrollbar-thumb {
   align-self: flex-start;
 }
 
-.rounded-full {
-  border-radius: 9999px;
-}
-
-.rounded-lg {
-  border-radius: 1rem;
-}
-
 .rounded-md {
   border-radius: 0.8rem;
 }
@@ -848,11 +823,6 @@ body::-webkit-scrollbar-thumb {
   color: hsl(0 0% 48% / var(--tw-text-opacity));
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .opacity-60 {
   opacity: 0.6;
 }
@@ -870,13 +840,12 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
 }
 
-.flex-start {
-  text-align: start;
-}
-
 .border-1 {
-  border: 1px solid hsl(0, 0%, 82%);
   border-radius: 0.6rem;
+  border-width: 1px;
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: hsl(0 0% 82% / var(--tw-border-opacity));
 }
 
 .dialog {
@@ -889,6 +858,35 @@ body::-webkit-scrollbar-thumb {
 
 .circle {
   border-radius: 9999px;
+}
+
+.b-full {
+  height: 4rem;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: hsl(176 50% 47% / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.border-2-cyan {
+  --tw-border-opacity: 1;
+  border-color: hsl(176 50% 47% / var(--tw-border-opacity));
+}
+
+.nav-d {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  z-index: 10;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: -moz-min-content;
+  max-height: min-content;
+  max-width: 64rem;
+  border-radius: 1rem;
 }
 
 .backdrop\:bg-backdrop::backdrop {

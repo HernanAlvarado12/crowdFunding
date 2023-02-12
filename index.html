@@ -35,7 +35,7 @@
                     </ul>
                 </menu>
             </nav>
-            <dialog class ="w-90 mx-auto py-3 px-2 z-50 absolute left-0 right-0 rounded-lg bg-white">
+            <dialog class ="w-90 nav-d mt-8 py-3 px-2 shadow-sm bg-white backdrop:bg-backdrop">
                 <div class ="flex items-center justify-between">
                     <h2 class ="text-black text-md font-semibold">Back this project</h2>
                     <img class ="cursor-pointer" src ="./assets/close-modal.svg" alt ="icon close">
@@ -46,7 +46,7 @@
                 </p>
                 <section class ="flex flex-col gap-y-2 text-gray text-sm">
                     <template id ="backplanTemplate">
-                        <article class ="w-full p-2 flex flex-col gap-y-2 border-1">
+                        <article class ="w-full p-2 flex flex-col gap-y-2 cursor-pointer border-1">
                             <div class ="w-full flex items-center gap-x-1">
                                 <span class ="w-2 h-2 block circle border-1"></span>
                                 <div>
@@ -55,6 +55,10 @@
                                 </div>
                             </div>
                             <p></p>
+                            <div class ="flex items-center gap-x-0.5">
+                                <span class ="text-black text-base font-semibold"></span>
+                                <span>left</span>
+                            </div>
                         </article>
                     </template>
                 </section>
@@ -67,10 +71,8 @@
                 <h2 class ="text-lg font-semibold">Mastercraft Bamboo Monitor Riser</h2>
                 <p class ="text-gray text-sm">A beautiful handcrafted monitor stand to reduce necnk and eye strain.</p>
                 <div class ="flex items-center justify-center gap-x-1">
-                    <button class ="w-[16rem] h-4 text-white text-xs font-semibold tracking-wide rounded-full bg-cyan">Back this project</button>
-                    <button>
-                        <img class ="w-5 h-5" src ="./assets/bookmark.svg" alt ="icon mark">
-                    </button>
+                    <button class ="w-[16rem] b-full text-xs font-semibold tracking-wide">Back this project</button>
+                    <img class ="w-5 h-5" src ="./assets/bookmark.svg" alt ="icon mark">    
                 </div>
             </article>
             <section class ="my-5 px-2 flex-flow gap-y-3">
@@ -83,7 +85,7 @@
                 <span class ="w-3/4 h-1 self-start rounded-md bg-cyan"></span>
             </section>
             <section class ="flex flex-col gap-y-3 text-gray text-sm">
-                <h2 class ="self-start text-black text-md font-semibold">About this project</h2>
+                <h2 class ="text-black text-md font-semibold">About this project</h2>
                 <p>
                     The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that 
                     elevates your screen to a more comfortable viewing height. Placing your 
@@ -107,7 +109,7 @@
                                 <span class ="text-black text-base font-semibold">101</span>
                                 <span>left</span>
                             </div>
-                            <button class ="w-[15rem] h-4 text-white rounded-full bg-cyan">Select Reward</button>
+                            <button class ="w-[15rem] b-full">Select Reward</button>
                         </article>
                     </template>
                     <dialog class ="w-90 max-w-3xl mx-auto p-3 dialog rounded-md backdrop:bg-backdrop">
@@ -117,7 +119,7 @@
                             Your pledge brings us one step close to sharing Mastercraft Bamboo Monitor Riser worldwide. 
                             You will get an email once our campaign is completed.
                         </p>
-                        <button class ="py-1 px-4 text-white text-md font-semibold rounded-full bg-cyan">Got it!</button>
+                        <button class ="py-1 px-4 b-full font-semibold">Got it!</button>
                     </dialog>
                 </section>
             </section>
